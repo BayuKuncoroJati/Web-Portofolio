@@ -1,0 +1,416 @@
+/* Universal */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial;
+}
+
+body{
+    color: white;
+}
+
+footer {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    background-color: #222;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.logo:hover{
+    color: darkorange;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+.navbar a:hover {
+    color: darkorange;
+}
+
+/* Batas Akhir Universal */
+
+/* Halaman Dashboar/Home */
+.home{
+    height: 100vh;
+    background: #5b3200;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.home-content{
+    max-width: 600px;
+    height: 350px;
+    margin-right: 80px;
+}
+
+.hero {
+    
+    height: 600px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero img {
+    height: 500px;
+    display: flex;
+    margin: auto;
+}
+
+.home-content h1{
+    line-height: 1.2;
+    font-size: 49px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    font-size: 29px;
+    font-weight: 700;
+    color: darkorange;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: darkorange;
+    border: 2px solid darkorange;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: darkorange;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: darkorange;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: black;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #222;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.btn-box a:hover {
+    color: darkorange;
+}
+
+.home-sci {
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 70px 0;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid darkorange;
+    border-radius: 50%;
+    font-size: 20px;
+    color: darkorange;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: darkorange;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-sci a:hover {
+    color: black;
+}
+/* Batas Akhir Halaman Dashboard/Home */
+
+/* Halaman About */
+.about {
+    height: 100vh;
+    background: url('../image/kelly-sikkema.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+}
+.about-content {
+    text-align: center;
+    max-width: 600px;
+    transition: .5s; 
+    overflow: hidden;
+}
+
+.about-content:hover {
+    background-color: #222;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.about-content h1 {
+    line-height: 1.2;
+    font-size: 49px;
+    font-weight: 700;
+    color: darkorange;
+}
+
+.about-content h4 {
+    line-height: 1.8;
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(255, 183, 0);
+}
+
+.container-gambar {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+}
+.content-gambar{
+    display: flex;
+    border: 5px dashed darkorange;
+}
+/* Batas Akhir halaman About */
+
+/* Halaman Portofolio */
+.porto {
+    height: 500px;
+    background: url('../image/bg-web.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.porto-content {
+    background-color: #222;
+    width: 800px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.kotak-awal {
+    background-color: darkorange    ;
+    width: 300px;
+    display: flex;
+    
+}
+
+.kotak {
+    background: url('../image/saya.jpeg') no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin: auto;
+    border-radius: 180px;
+    border: 2px solid black;
+}
+
+.myself {
+    background-color: brown;
+    margin: auto;
+    display: flex;
+    
+}
+
+.main-content {
+    margin: 20px 20px;
+}
+
+.main-me {
+    width: 460px;
+}
+
+h1 {
+    line-height: 2;
+}
+
+.p-2 {
+    margin-top: 10px;
+}
+
+.p-3 {
+    margin-top: 10px;
+}
+/* Batas Akhir Halaman Portofolio */
+
+
+/* Halaman Contact */
+.container {
+    height: 600px;
+    width: 100%;
+    background: url('../image/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.kotak-content {
+    background: blue;
+    height: 515px;
+    width: 800px;
+    margin: auto;
+    border:2px solid #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card1 {
+    background: darkorange;
+    color: black;
+    width: 400px;
+    height: 515px;
+    display: flex;
+}
+
+.card2 {
+    background: #222;
+    width: 400px;
+    height: 515px;
+    flex-basis: 400px;
+    display: flex;
+}
+
+.isi-card1 {
+    margin: auto 20px;
+}
+
+.isi-card2 {
+    
+    margin: auto 25px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.p1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.p2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.isi-card2 textarea {
+    width: 100%;
+    margin: 4px 0;
+}
+
+input {
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #555;
+}
+
+input[type=submit] {
+    background-color: darkorange;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #FF8C00;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 50%;
+    margin: 0 87.5px 6px;
+    cursor: pointer;
+}
+/* Batas Akhir Halaman Contact */
